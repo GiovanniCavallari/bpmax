@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
+//páginas common
+Route::get('/', 'BeginController@index')->name('welcome');
 Route::get('/home', 'HomeController@index')->name('home');
