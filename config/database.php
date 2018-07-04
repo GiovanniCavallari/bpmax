@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'sqlsrv'),
 
     /*
     |--------------------------------------------------------------------------
@@ -36,7 +36,7 @@ return [
             'driver' => 'sqlsrv',
             'host' => env('DB_HOST', 'gustavo-imagine.database.windows.net'),
             'port' => env('DB_PORT', '1433'),
-            'database' => env('DB_DATABASE', 'teste_db'),
+            'database' => env('DB_DATABASE', 'bp_max'),
             'username' => env('DB_USERNAME', 'gCalixto'),
             'password' => env('DB_PASSWORD', 'Entrelaeca2018'),
             'charset' => 'utf8',
