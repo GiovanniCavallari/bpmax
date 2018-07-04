@@ -13,6 +13,6 @@
 
 Auth::routes();
 
-//páginas common
+//paginas common
 Route::get('/', 'BeginController@index')->name('welcome');
 Route::get('/home', 'HomeController@index')->name('home');

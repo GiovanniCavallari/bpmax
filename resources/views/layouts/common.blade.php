@@ -4,7 +4,7 @@
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Author Meta -->
-        <meta name="author" content="codepixer">
+        <meta name="author" content="giocavallari">
         <!-- Meta Description -->
         <meta name="description" content="">
         <!-- Meta Keyword -->
