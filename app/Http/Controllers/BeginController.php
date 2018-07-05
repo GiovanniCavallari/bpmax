@@ -13,4 +13,8 @@ class BeginController extends Controller
     public function contato(){
     	
     }
+
+    public function ruidos(){
+    	
+    }
 }
