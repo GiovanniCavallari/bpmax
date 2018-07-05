@@ -1,0 +1,60 @@
+.imglogo{
+	max-width: 200px;
+	height: auto;
+}
+
+.btn-home{
+	text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn-footer{
+	text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.text-bold{
+	font-weight: bold;
+}
+
+.solution-image{
+	max-width: 100%;
+}
+
+.icon-services{
+	font-size: 50px;
+	color: #da2b2e;
+}
+
+.font-team{
+	font-size: 15px;
+}
+
+.text-ruidos{
+	font-size: 60px;
+	color: #fff;
+}
+
+.footer-links-frame{
+	display: grid;
+	margin-bottom: 20px;
+}
+
+.footer-links-frame a{
+	margin-bottom: 5px;
+	color: #777777;
+	margin-left: 10px;
+}
+
+.footer-links-frame a:hover{
+	color: #da2b2e;
+	margin-left: 15px;
+}
+
+.hr-footer{
+	color: #fff;
+	border-top: 1px dotted #fff;
+}
