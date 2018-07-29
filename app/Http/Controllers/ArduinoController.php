@@ -35,7 +35,7 @@ class ArduinoController extends Controller
 
     		return 'Dados inseridos com sucesso';
     	} catch (Exception $e) {
-    		return 'Erro: ' . $e->getMessage() . ' na linha: ' $e->getLine() . ' do arquivo: ' $e->getFile();
+    		return 'Erro: ' . $e->getMessage() . ' na linha: ' $e->getLine() . ' do arquivo: ' . $e->getFile();
     	}
     	
 
