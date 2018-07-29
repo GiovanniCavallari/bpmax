@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Device;
+use App\Measure;
+use App\MeasureAux;
 
 class ArduinoController extends Controller
 {
