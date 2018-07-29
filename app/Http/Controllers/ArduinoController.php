@@ -24,7 +24,7 @@ class ArduinoController extends Controller
     		$measure = Measure::create([
     			'decibels' => $dados['decibels'],
     			'points'   => 10,
-    			'id_robo'  => $deviceID
+    			'id_robo'  => $deviceID[0]
     		]);
 
     		$measureUsers = [];
