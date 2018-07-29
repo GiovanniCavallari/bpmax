@@ -15,3 +15,4 @@ Auth::routes();
 //paginas common
 Route::get('/', 'BeginController@index')->name('welcome');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/arduino', 'ArduinoController@index')->name('arduino');

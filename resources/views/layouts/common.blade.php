@@ -44,7 +44,7 @@
                 <div class="row header-top align-items-center">
                     <div class="col-lg-4 col-sm-4 menu-top-left"></div>
                     <div class="col-lg-4 menu-top-middle justify-content-center d-flex">
-                        <a href="index.html">
+                        <a href="/">
                             <img class="img-fluid imglogo" src="{{ URL::asset('img/logo-bpmax.png') }}" alt=""> 
                         </a>                            
                     </div>
