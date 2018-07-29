@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class MeasureAux extends Model
 {
     //
-    $protected = ['id_user','id_measure'];
+    protected $fillable = ['id_user','id_measure'];
 }
