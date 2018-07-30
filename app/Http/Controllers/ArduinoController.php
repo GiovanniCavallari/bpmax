@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Device;
 use App\Measure;
-use App\MeasureAux;
+use App\MeasuresAux;
 
 class ArduinoController extends Controller
 {
@@ -28,12 +28,12 @@ class ArduinoController extends Controller
     		]);
 
     		$measureUsers = [];
-    		foreach ($dados['users'] as $user) {
-    			$measureUsers['id_measure'] = $measure['id'];
-    			$measureUsers['id_user']    = $user;
-    		}
+            for ($i=0; $i < count($dados['users']); $i++) { 
+                $measureUsers[$i]['id_measure'] = $measure['id'];
+                $measureUsers[$i]['id_user']    = $dados['users'][$i];
+            }
 
-    		MeasureAux::insert($measureUsers);
+    		MeasuresAux::insert($measureUsers);
 
     		return 'Dados inseridos com sucesso';
     	} catch (Exception $e) {
