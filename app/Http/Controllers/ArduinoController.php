@@ -14,7 +14,6 @@ class ArduinoController extends Controller
 
     	try {
     		$dados = $request->all();       
-            $dados = json_decode($dados,true);  
 
     		$deviceID = Device::where('hash', $dados['hash'])->pluck('id');
 
