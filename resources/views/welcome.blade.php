@@ -61,7 +61,7 @@
                             <li><a href="#services">Serviços</a></li>                         
                             <li><a href="#components">Componentes</a></li>
                             <li><a href="#team">Equipe</a></li>
-                            <li><a href="#">Ruídos</a></li>
+                            <li><a href="{{route('ruidos')}}">Ruídos</a></li>
                             <li><a href="{{route('login')}}">Login</a></li>
                         </ul>
                     </nav>              
