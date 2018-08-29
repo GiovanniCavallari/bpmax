@@ -58,3 +58,54 @@
 	color: #fff;
 	border-top: 1px dotted #fff;
 }
+
+.boxshadow{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.posrelative{
+	position: relative !important;
+}
+
+.card-login{
+	border: none;
+}
+
+.card-body-login{
+	border: none;
+}
+
+.input-login{
+	border-radius: 0;	
+}
+
+.forgot-link{
+	color: #888;
+	padding: 0;
+	margin-top: 10px;
+}
+
+.forgot-link:hover{
+	color: #888;
+}
+
+.btn-login{
+	text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.invalid-feedback{
+	font-size: 12px;
+	font-weight: 600;
+}
+
+@media (max-width: 800px) {
+	.posrelative{
+		position: fixed !important;
+	}
+	.padding-mobile{
+		padding-top: 100px;
+		padding-bottom: 40px;
+	}
+}

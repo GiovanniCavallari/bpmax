@@ -1,8 +1,21 @@
-@extends('layouts.app')
+@extends('layouts.common')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
+@section('content-common')
+
+<section class="offer-area relative pt-30 pb-50 padding-mobile">
+    <div class="container"> 
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-0 col-lg-6">
+                <div class="title text-center">
+                    <h1 class="mb-10">Login</h1>
+                    <p class="text-left">Acesse sua conta para gerenciar as informações do robô preenchendo os campos abaixo:</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row d-flex justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Reset Password') }}</div>

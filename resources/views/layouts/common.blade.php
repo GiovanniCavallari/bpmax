@@ -39,7 +39,7 @@
     <body>
 
         <!-- header -->
-        <header id="header" id="home">
+        <header id="header" class="posrelative boxshadow">
             <div class="container">
                 <div class="row header-top align-items-center">
                     <div class="col-lg-4 col-sm-4 menu-top-left"></div>
@@ -56,13 +56,13 @@
                 <div class="row align-items-center justify-content-center d-flex">
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
-                            <li class="menu-active"><a href="#home">Home</a></li>
-                            <li><a href="#solucao">Solução</a></li>
-                            <li><a href="#services">Serviços</a></li>                         
-                            <li><a href="#components">Componentes</a></li>
-                            <li><a href="#team">Equipe</a></li>
+                            <li><a href="{{route('welcome')}}">Home</a></li>
+                            <li><a href="#">Solução</a></li>
+                            <li><a href="#">Serviços</a></li>                         
+                            <li><a href="#">Componentes</a></li>
+                            <li><a href="#">Equipe</a></li>
                             <li><a href="#">Ruídos</a></li>
-                            <li><a href="#">Login</a></li>
+                            <li><a href="{{route('login')}}">Login</a></li>
                         </ul>
                     </nav>              
                 </div>
@@ -80,7 +80,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="single-footer-widget">
-                            <img class="img-fluid imglogo" src="img/logo-bpmax.png" alt="">
+                            <img class="img-fluid imglogo" src="{{ URL::asset('img/logo-bpmax.png') }}" alt="">
                             <p class="text-justify mt-20">
                                 Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
                             </p>
@@ -157,10 +157,11 @@
         <script type="text/javascript">
             $(function(){
                 $("#btn-home").click(function (event) {
-                    event.preventDefault();
-                    var idElemento = $(this).attr("href");
-                        var deslocamento = $(idElemento).offset().top;
-                    $('html, body').animate({ scrollTop: deslocamento }, 'slow');
+                  event.preventDefault();
+                  var idElemento = $(this).attr("href");
+                  var cotaMenu   = $('#navbar').height();
+                  var deslocamento = $(idElemento).offset().top - cotaMenu - 130;
+                  $('html, body').animate({ scrollTop: deslocamento }, 'slow');
                 });
               });
         </script>
