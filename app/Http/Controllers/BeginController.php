@@ -10,11 +10,24 @@ class BeginController extends Controller
     	return view('welcome');
     }
 
-    public function contato(){
-    	
+    public function solucao(){
+    	return view('solucao');
+    }
+
+    public function servicos(){
+    	return view('servicos');
+    }
+
+    public function componentes(){
+    	return view('componentes');
+    }
+
+    public function equipe(){
+    	return view('equipe');
     }
 
     public function ruidos(){
-    	
+    	return view('ruidos');
     }
+    
 }

@@ -57,11 +57,11 @@
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
                             <li><a href="{{route('welcome')}}">Home</a></li>
-                            <li><a href="#">Solução</a></li>
-                            <li><a href="#">Serviços</a></li>                         
-                            <li><a href="#">Componentes</a></li>
-                            <li><a href="#">Equipe</a></li>
-                            <li><a href="#">Ruídos</a></li>
+                            <li><a href="{{route('solucao')}}">Solução</a></li>
+                            <li><a href="{{route('servicos')}}">Serviços</a></li>                         
+                            <li><a href="{{route('componentes')}}">Componentes</a></li>
+                            <li><a href="{{route('equipe')}}">Equipe</a></li>
+                            <li><a href="{{route('ruidos')}}">Ruídos</a></li>
                             <li><a href="{{route('login')}}">Login</a></li>
                         </ul>
                     </nav>              
