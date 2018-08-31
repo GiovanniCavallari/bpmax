@@ -1,0 +1,105 @@
+.divbotaomobile{
+	margin: -33px -55px 0 0;
+	float: right;
+}
+
+.margintoplinkhome{
+	margin-top: -5px;
+}
+
+.margintoplogo{
+	margin-top: -5px;
+	margin-bottom: -10px;
+}
+
+.margintopupdates{
+	margin-top: -5px;
+}
+
+.marginactivities{
+	margin-top: -30px;
+}
+
+.sizedeveloper{
+	font-size: 13px;
+	transition: 300ms;
+	-webkit-transition: 300ms;
+	text-decoration: none;
+}
+
+.sizedeveloper:hover{
+	color: #00b3bc;
+	transition: 300ms;
+	-webkit-transition: 300ms;
+	text-decoration: none;
+}
+
+.linetable{
+	line-height: 30px;
+}
+
+.borderbottom{
+	border-bottom: 1px solid #ddd;
+}
+
+.helpform{
+	margin-top: -5px;
+    float: right;
+    color: red;
+}
+
+.pickacolor{
+	cursor: pointer; 
+	color: transparent;
+	text-shadow: 0 0 0 #495057;
+}
+
+.colour{
+	display: inline-block;
+  	width: 20px;
+  	height: 20px;
+  	margin-top: 5px;
+  	margin-left: 5px;
+  	margin-bottom: 0px;
+  	border: 1px solid #555;
+}
+
+.textcolour{
+	float: right;
+    margin: 0px 0 0 5px;
+}
+
+.lineheightimg{
+	line-height: 70px;
+}
+
+.lineheightport{
+	line-height: 155px;
+}
+
+.texteditor{
+	margin: -30px 0 0 0;
+}
+
+.forgotpass{
+	float: right;
+    margin: -20px 0 35px 0;
+}
+
+.no-marginleft{
+	margin-left: 0;
+}
+
+.lineheightprod{
+	line-height: 100px;
+}
+
+.frametab{
+	border: 1px solid #ddd;
+	padding: 18px 15px;
+}
+
+.linktab:hover{
+	border-radius: 0px;
+	background-color: #eee;
+}

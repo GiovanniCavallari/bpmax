@@ -8,8 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Measure extends Model
 {
-    //
-    protected $fillable = ['decibels','id_robo','points'];
+    protected $fillable = [
+    	'decibels',
+    	'device_id',
+    	'points'
+    ];
 
     public function user()
     {

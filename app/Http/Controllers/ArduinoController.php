@@ -9,7 +9,6 @@ use App\MeasuresAux;
 
 class ArduinoController extends Controller
 {
-    //
     public function index(Request $request){
 
     	try {
@@ -22,15 +21,15 @@ class ArduinoController extends Controller
     		}
 
     		$measure = Measure::create([
-    			'decibels' => $dados['decibels'],
-    			'points'   => 10,
-    			'id_robo'  => $deviceID[0]
+    			'decibels'  => $dados['decibels'],
+    			'points'    => 10,
+    			'device_id' => $deviceID[0]
     		]);
 
     		$measureUsers = [];
             for ($i=0; $i < count($dados['users']); $i++) { 
-                $measureUsers[$i]['id_measure'] = $measure['id'];
-                $measureUsers[$i]['id_user']    = $dados['users'][$i];
+                $measureUsers[$i]['measure_id'] = $measure['id'];
+                $measureUsers[$i]['user_id']    = $dados['users'][$i];
             }
 
     		MeasuresAux::insert($measureUsers);

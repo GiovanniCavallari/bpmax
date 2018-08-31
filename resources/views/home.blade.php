@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.common')
 
-@section('content')
+@section('content-common')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center pt-40 pb-40">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Dashboard</div>

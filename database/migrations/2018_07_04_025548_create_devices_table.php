@@ -17,6 +17,7 @@ class CreateDevicesTable extends Migration
             $table->increments('id');
             $table->integer('wing_id');
             $table->string('hash');
+            $table->enum('power', ['0', '1']);
             $table->timestamps();
         });
     }

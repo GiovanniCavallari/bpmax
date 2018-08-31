@@ -16,8 +16,8 @@ class CreateMeasuresTable extends Migration
         Schema::create('measures', function (Blueprint $table) {
             $table->increments('id');
             $table->double('decibels',3,2);
-            $table->integer('id_robo');
-            $table->float('points',4,8);
+            $table->integer('device_id');
+            $table->float('points',8,2);
             $table->timestamps();
         });
     }

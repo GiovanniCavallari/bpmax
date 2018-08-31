@@ -15,6 +15,7 @@ class CreateWingsTable extends Migration
     {
         Schema::create('wings', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nome', 250);
             $table->string('description');
             $table->timestamps();
         });

@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class MeasuresAux extends Model
 {
-    //
-    protected $fillable = ['id_user','id_measure'];
+    protected $fillable = [
+    	'user_id',
+    	'measure_id'
+    ];
 }

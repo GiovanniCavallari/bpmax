@@ -14,8 +14,8 @@ class CreateMeasuresAuxTable extends Migration
     public function up()
     {
         Schema::create('measures_aux', function (Blueprint $table) {
-            $table->integer('id_user');
-            $table->integer('id_measure');
+            $table->integer('user_id');
+            $table->integer('measure_id');
         });
     }
 
