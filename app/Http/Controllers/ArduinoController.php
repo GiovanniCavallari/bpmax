@@ -23,10 +23,8 @@ class ArduinoController extends Controller
 
             $users = User::query('id')->whereIn('rfid_tag',$dados['users'])->get()->toArray();
 
-            dd($deviceID);
-
     		$measure = Measure::create([
-    			'decibels'  => $dados['decibels'],
+    			'decibels'  => $dados['db'],
     			'points'    => 10,
     			'device_id' => $deviceID[0]['id']
     		]);
