@@ -17,6 +17,8 @@ class ArduinoController extends Controller
 
     		$deviceID = Device::query('id','power')->where('hash', $dados['hash'])->get()->toArray();
 
+            dd($deviceID);
+
     		if (empty($deviceID)) {
     			return 'Dispositivo inválido';
     		}
