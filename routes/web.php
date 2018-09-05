@@ -19,6 +19,7 @@ Route::get('/servicos', 'BeginController@servicos')->name('servicos');
 Route::get('/componentes', 'BeginController@componentes')->name('componentes');
 Route::get('/equipe', 'BeginController@equipe')->name('equipe');
 Route::get('/ruidos', 'BeginController@ruidos')->name('ruidos');
+Route::get('/dblevel', 'BeginController@dblevel')->name('dblevel');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('user/logout', 'Auth\LoginController@userLogout')->name('user.logout');

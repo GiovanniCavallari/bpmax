@@ -3,7 +3,7 @@
 @section('content-common')
 
 <!-- componentes -->
-<section class="schedule-area section-gap" id="components">
+<section class="schedule-area section-gap pb-mobile" id="components">
 	<div class="container">
 		<div class="row d-flex justify-content-center">
 			<div class="menu-content pb-40 col-lg-8">

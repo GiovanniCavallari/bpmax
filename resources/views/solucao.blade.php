@@ -3,7 +3,7 @@
 @section('content-common')
 
 <!-- soluções -->
-<section class="offer-area pt-40 pb-60" id="solucao">
+<section class="offer-area pt-40 pb-60 pb-mobile" id="solucao">
     <div class="container"> 
         <div class="row d-flex justify-content-center">
             <div class="menu-content pb-40 col-lg-8">

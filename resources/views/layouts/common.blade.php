@@ -157,13 +157,19 @@
         <script type="text/javascript">
             $(function(){
                 $("#btn-home").click(function (event) {
-                  event.preventDefault();
-                  var idElemento = $(this).attr("href");
-                  var cotaMenu   = $('#navbar').height();
-                  var deslocamento = $(idElemento).offset().top - cotaMenu - 130;
-                  $('html, body').animate({ scrollTop: deslocamento }, 'slow');
+                    event.preventDefault();
+                    var idElemento = $(this).attr("href");
+                    var cotaMenu   = $('#navbar').height();
+                    var deslocamento = $(idElemento).offset().top - cotaMenu - 130;
+                    $('html, body').animate({ scrollTop: deslocamento }, 'slow');
                 });
-              });
+            });
+
+            $(document).ready(function(){
+                setInterval(function() {  
+                $("#label-dblevel").load("dblevel");
+                }, 1000);
+            });
         </script>
     </body>
 </html>

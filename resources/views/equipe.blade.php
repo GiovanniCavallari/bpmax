@@ -3,7 +3,7 @@
 @section('content-common')
 
 <!-- equipe -->
-<section class="team-area section-gap pb-40" id="team">
+<section class="team-area section-gap pb-40 pb-mobile" id="team">
 	<div class="container">
 		<div class="row d-flex justify-content-center">
 			<div class="menu-content pb-40 col-lg-8">

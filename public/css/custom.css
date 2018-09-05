@@ -100,6 +100,30 @@
 	font-weight: 600;
 }
 
+.label-dblevel{
+	border-radius: 5px;
+	text-align: center;
+	display: inline-block;
+}
+
+.danger-dblevel{
+	background-color: #da2b2e;
+}
+
+.warning-dblevel{
+	background-color: #ffc107;
+}
+
+.good-dblevel{
+	background-color: #1e7e34;
+}
+
+.text-dblevel{
+	font-size: 50px;
+	padding: 20px 20px;
+	color: #fff;
+}
+
 @media (max-width: 800px) {
 	.posrelative{
 		position: fixed !important;
@@ -107,5 +131,8 @@
 	.padding-mobile{
 		padding-top: 100px;
 		padding-bottom: 40px;
+	}
+	.pb-mobile{
+		padding-top: 120px;
 	}
 }
