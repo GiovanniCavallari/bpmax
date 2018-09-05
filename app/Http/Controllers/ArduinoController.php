@@ -17,13 +17,13 @@ class ArduinoController extends Controller
 
     		$deviceID = Device::query('id','power')->where('hash', $dados['hash'])->get()->toArray();
 
-            dd($deviceID);
-
     		if (empty($deviceID)) {
     			return 'Dispositivo inválido';
     		}
 
             $users = User::query('id')->whereIn('rfid_tag',$dados['users'])->get()->toArray();
+
+            dd($users);
 
     		$measure = Measure::create([
     			'decibels'  => $dados['decibels'],
