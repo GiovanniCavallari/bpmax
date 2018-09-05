@@ -15,7 +15,7 @@ class ArduinoController extends Controller
     	try {
     		$dados = $request->all();       
 
-    		$deviceID = Device::where('hash', $dados['hash'])->pluck('id')->toArray();
+    		$deviceID = Device::query('id','power')->where('hash', $dados['hash'])->get()->toArray();
 
     		if (empty($deviceID)) {
     			return 'Dispositivo inválido';
@@ -26,7 +26,7 @@ class ArduinoController extends Controller
     		$measure = Measure::create([
     			'decibels'  => $dados['decibels'],
     			'points'    => 10,
-    			'device_id' => $deviceID[0]
+    			'device_id' => $deviceID[0]['id']
     		]);
 
             for ($i=0; $i < count($dados['users']); $i++) { 
@@ -42,7 +42,7 @@ class ArduinoController extends Controller
 
     		MeasuresAux::insert($measureUsers);
 
-    		return 'Dados inseridos com sucesso';
+    		return $deviceID[0]['power'];
     	} catch (Exception $e) {
     		return 'Erro: ' . $e->getMessage() . ' na linha: ' . $e->getLine() . ' do arquivo: ' . $e->getFile();
     	}
