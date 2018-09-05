@@ -13,8 +13,7 @@ class ArduinoController extends Controller
     public function index(Request $request){
 
     	try {
-    		$dados = $request->all();
-            dd($dados);       
+    		$dados = $request->all();       
 
     		$deviceID = Device::query('id','power')->where('hash', $dados['hash'])->get()->toArray();
 
