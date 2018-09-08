@@ -7,9 +7,16 @@ use App\Device;
 use App\Measure;
 use App\MeasuresAux;
 use App\User;
-
+/**
+ * @author Gustavo Calixto <gustavo.calixtosouza@gmail.com>
+ */
 class ArduinoController extends Controller
 {
+    /**
+     * Realiza a integração com o arduino, recebendo os dados para cadastrar no banco de dados do azure.
+     * @param  Request $request [Requisição post]
+     * @return [int]           [verificação se o robo está ligado ou desligado]
+     */
     public function index(Request $request){
 
     	try {
@@ -48,7 +55,13 @@ class ArduinoController extends Controller
     	} catch (Exception $e) {
     		return 'Erro: ' . $e->getMessage() . ' na linha: ' . $e->getLine() . ' do arquivo: ' . $e->getFile();
     	}
-    	
+    }
 
+    /**
+     * Retorna para o arduino para verificar se ele está ligado ou desligado.
+     * @return [int] [power]
+     */
+    public function power(Request $request){
+        return Device::where('hash',$request->get('hash'))->pluck('power')[0];
     }
 }

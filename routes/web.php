@@ -25,6 +25,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('user/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 
 Route::post('/arduino', 'ArduinoController@index')->name('arduino');
+Route::post('/power', 'ArduinoController@power')->name('power');
 
 //admin
 Route::prefix('admin')->group(function(){
