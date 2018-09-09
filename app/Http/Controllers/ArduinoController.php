@@ -62,7 +62,6 @@ class ArduinoController extends Controller
      * @return [int] [power]
      */
     public function power(Request $request){
-        dd($request->get('hash'));
         return Device::where('hash',$request->get('hash'))->pluck('power')[0];
     }
 }
