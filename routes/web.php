@@ -45,6 +45,7 @@ Route::prefix('admin')->group(function(){
 	Route::get('/colaboradores/listar', 'Admin\ColaboradoresController@index')->name('admin.colaboradores.listar');
 	Route::get('/colaboradores/cadastrar', 'Admin\ColaboradoresController@cadastrar')->name('admin.colaboradores.cadastrar');
 	Route::get('/colaboradores/submit', 'Admin\ColaboradoresController@cadastrar')->name('admin.colaboradores.submit');
+	Route::get('/colaboradores/pontuacao','Admin\ColaboradoresController@pontuacao');
 
 	//log
 	Route::get('/log/listar', 'Admin\LogController@index')->name('admin.log.listar');

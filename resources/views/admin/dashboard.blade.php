@@ -224,5 +224,7 @@
 	</div>
 </section>
 <!-- fim atividades recentes -->
-
+@endsection
+@section('scripts')
+	<script type="text/javascript" src="{{ URL::asset('admin-assets/js/dashboard.js') }}"></script>
 @endsection
