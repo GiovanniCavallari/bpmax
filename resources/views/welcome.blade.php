@@ -194,49 +194,126 @@
                                 <tr>
                                     <th class="head" scope="col">Produto</th>
                                     <th class="head" scope="col">Quantidade</th>
-                                    <th class="head" scope="col">Preço unitário</th>
-                                    <th class="head" scope="col">Subtotal</th>
+                                    <th class="head" scope="col">Preço unitário (R$)</th>
+                                    <th class="head" scope="col">Subtotal (R$)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th class="name" scope="row">Fitness Aero</th>
-                                    <td class="name" scope="row">10.00 02.00</td>                     
-                                    <td class="name" scope="row">10.00 02.00</td>                     
-                                    <td class="name" scope="row">10.00 02.00</td>                 
+                                    <th class="name" scope="row">Arduino Uno</th>
+                                    <td class="name" scope="row">2</td>                     
+                                    <td class="name" scope="row">56,00</td>                     
+                                    <td class="name" scope="row">112,00</td>                 
                                 </tr>
 
                                 <tr>
-                                    <th class="name" scope="row">Fitness Aero</th>
-                                    <td class="name" scope="row">10.00 02.00</td>                     
-                                    <td class="name" scope="row">10.00 02.00</td>                     
-                                    <td class="name" scope="row">10.00 02.00</td>                 
+                                    <th class="name" scope="row">Motores</th>
+                                    <td class="name" scope="row">4</td>                     
+                                    <td class="name" scope="row">17,80</td>                     
+                                    <td class="name" scope="row">71,20</td>                 
                                 </tr>
 
                                 <tr>
-                                    <th class="name" scope="row">Fitness Aero</th>
-                                    <td class="name" scope="row">10.00 02.00</td>                     
-                                    <td class="name" scope="row">10.00 02.00</td>                     
-                                    <td class="name" scope="row">10.00 02.00</td>                 
-                                </tr>
-
-                                <tr>
-                                    <th class="name" scope="row">Fitness Aero</th>
-                                    <td class="name" scope="row">10.00 02.00</td>                     
-                                    <td class="name" scope="row">10.00 02.00</td>                     
-                                    <td class="name" scope="row">10.00 02.00</td>                 
-                                </tr>
-
-                                <tr>
-                                    <th class="name" scope="row">Fitness Aero</th>
-                                    <td class="name" scope="row">10.00 02.00</td>                     
-                                    <td class="name" scope="row">10.00 02.00</td>                     
-                                    <td class="name" scope="row">10.00 02.00</td>                 
+                                    <th class="name" scope="row">Rodas</th>
+                                    <td class="name" scope="row">4</td>                     
+                                    <td class="name" scope="row">16,50</td>                     
+                                    <td class="name" scope="row">66,00</td>                 
                                 </tr>               
+
+                                <tr>
+                                    <th class="name" scope="row">Microfone MAX4466</th>
+                                    <td class="name" scope="row">1</td>                     
+                                    <td class="name" scope="row">30,00</td>                     
+                                    <td class="name" scope="row">30,00</td>                 
+                                </tr>
+
+                                <tr>
+                                    <th class="name" scope="row">ESP-8266</th>
+                                    <td class="name" scope="row">1</td>                     
+                                    <td class="name" scope="row">32,00</td>                     
+                                    <td class="name" scope="row">32,00</td>                 
+                                </tr>
+
+                                <tr>
+                                    <th class="name" scope="row">HC-05</th>
+                                    <td class="name" scope="row">1</td>                     
+                                    <td class="name" scope="row">36,90</td>                     
+                                    <td class="name" scope="row">36,90</td>                 
+                                </tr>
+
+                                <tr>
+                                    <th class="name" scope="row">Sensor infravermelho 4 sondas</th>
+                                    <td class="name" scope="row">1</td>                     
+                                    <td class="name" scope="row">25,00</td>                     
+                                    <td class="name" scope="row">25,00</td>                 
+                                </tr>
+
+                                <tr>
+                                    <th class="name" scope="row">Interruptor</th>
+                                    <td class="name" scope="row">1</td>                     
+                                    <td class="name" scope="row">6,50</td>                     
+                                    <td class="name" scope="row">6,50</td>                 
+                                </tr>
+
+                                <tr>
+                                    <th class="name" scope="row">Kit de cabos</th>
+                                    <td class="name" scope="row">2</td>                     
+                                    <td class="name" scope="row">10,00</td>                     
+                                    <td class="name" scope="row">20,00</td>                 
+                                </tr>
+
+                                <tr>
+                                    <th class="name" scope="row">Kit de resistores</th>
+                                    <td class="name" scope="row">1</td>                     
+                                    <td class="name" scope="row">10,00</td>                     
+                                    <td class="name" scope="row">10,00</td>                 
+                                </tr>
+
+                                <tr>
+                                    <th class="name" scope="row">L239B</th>
+                                    <td class="name" scope="row">1</td>                     
+                                    <td class="name" scope="row">34,80</td>                     
+                                    <td class="name" scope="row">34,80</td>                 
+                                </tr>
+
+                                <tr>
+                                    <th class="name" scope="row">Bateria LIPO 2S 5000mAh</th>
+                                    <td class="name" scope="row">1</td>                     
+                                    <td class="name" scope="row">150,00</td>                     
+                                    <td class="name" scope="row">150,00</td>                 
+                                </tr>
+
+                                <tr>
+                                    <th class="name" scope="row">Carregador para bateria LIPO</th>
+                                    <td class="name" scope="row">1</td>                     
+                                    <td class="name" scope="row">45,90</td>                     
+                                    <td class="name" scope="row">45,90</td>                 
+                                </tr>
+
+                                <tr>
+                                    <th class="name" scope="row">Tablet</th>
+                                    <td class="name" scope="row">1</td>                     
+                                    <td class="name" scope="row">270,00</td>                     
+                                    <td class="name" scope="row">270,00</td>                 
+                                </tr>
+
+                                <tr>
+                                    <th class="name" scope="row">Kit chassi</th>
+                                    <td class="name" scope="row">1</td>                     
+                                    <td class="name" scope="row">70,00</td>                     
+                                    <td class="name" scope="row">70,00</td>                 
+                                </tr>
+
+                                <tr>
+                                    <th class="name" scope="row">HC-SR04</th>
+                                    <td class="name" scope="row">1</td>                     
+                                    <td class="name" scope="row">15,00</td>                     
+                                    <td class="name" scope="row">15,00</td>                 
+                                </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <th colspan="4" class="total" scope="row">TOTAL &nbsp; R$ 644,91</th>                 
+                                    <th colspan="4" class="total" scope="row">TOTAL &nbsp; R$ 995,30</th>                 
                                 </tr>
                             </tfoot>
                         </table>                            
