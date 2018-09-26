@@ -83,7 +83,7 @@
 <!-- graficos ruídos -->
 
 <!-- robos -->
-<section class="tables margintopupdates no-padding-bottom">   
+<!-- <section class="tables margintopupdates no-padding-bottom">   
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
@@ -104,7 +104,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <!-- fim robos -->
 
 <!-- alas -->
