@@ -60,7 +60,7 @@ class BeginController extends Controller
         }
 
         return '<div id="label-dblevel" class="label-dblevel '.$label.'">
-                    <h1 class="title text-dblevel">'.$measure->decibels.' dB</h1>
+                    <h1 class="title text-dblevel">'.round($measure->decibels, 2).' dB</h1>
                 </div>';
     }
     

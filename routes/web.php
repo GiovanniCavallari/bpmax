@@ -31,15 +31,19 @@ Route::post('/power', 'ArduinoController@power')->name('power');
 Route::prefix('admin')->group(function(){
 	Route::get('/', 'HomeController@index')->name('admin.dashboard');
 
+	//robos
+	Route::get('/configuration', 'Admin\ConfigurationController@index')->name('config');
+	Route::get('/configuration/{id}/editar', 'Admin\ConfigurationController@editar');
+	Route::post('/configuration/{id}/update', 'Admin\ConfigurationController@update');
+	Route::get('/configuration/cadastrar', 'Admin\ConfigurationController@cadastrar')->name('config.cadastrar');
+	Route::post('/configuration/submit', 'Admin\ConfigurationController@submit')->name('config.submit');
+
 	//alas
 	Route::get('/alas/listar', 'Admin\AlasController@index')->name('admin.alas.listar');
 	Route::get('/alas/cadastrar', 'Admin\AlasController@cadastrar')->name('admin.alas.cadastrar');
-	Route::get('/alas/submit', 'Admin\AlasController@cadastrar')->name('admin.alas.submit');
-
-	//robos
-	Route::get('/robos/listar', 'Admin\RobosController@index')->name('admin.robos.listar');
-	Route::get('/robos/cadastrar', 'Admin\RobosController@cadastrar')->name('admin.robos.cadastrar');
-	Route::get('/robos/submit', 'Admin\RobosController@cadastrar')->name('admin.robos.submit');
+	Route::post('/alas/submit', 'Admin\AlasController@submit')->name('admin.alas.submit');
+	Route::get('/alas/{id}/editar', 'Admin\AlasController@editar');
+	Route::post('/alas/{id}/update', 'Admin\AlasController@update');
 
 	//colaboradores
 	Route::get('/colaboradores/listar', 'Admin\ColaboradoresController@index')->name('admin.colaboradores.listar');

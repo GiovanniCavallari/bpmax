@@ -17,7 +17,7 @@
 		<div class="row justify-content-center d-flex align-items-center">
 			<div class="col-md-12 text-center">
 				<div id="label-dblevel" class="label-dblevel {{$label}}">
-					<h1 class="title text-dblevel">{{$measure->decibels}} dB</h1>
+					<h1 class="title text-dblevel">{{round($measure->decibels, 2)}} dB</h1>
 				</div>
 			</div>
 		</div>

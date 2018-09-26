@@ -101,9 +101,6 @@
 
           <span class="heading">Sistema</span>
           <ul class="list-unstyled">
-            <li>
-              <a href="configuracoes.php"> <i class="fa fa-cogs"></i>Configurações </a>
-            </li>
 
             <li>
               <a href="#menuDropdown18" aria-expanded="false" data-toggle="collapse"> 
@@ -120,8 +117,8 @@
                 <i class="fa fa-robot"></i>Robôs
               </a>
               <ul id="menuDropdown6" class="collapse list-unstyled ">
-                <li><a href="robos-listar.php">Listar</a></li>
-                <li><a href="robos-cadastrar.php">Cadastrar</a></li>
+                <li><a href="{{route('config')}}">Listar</a></li>
+                <li><a href="{{route('config.cadastrar')}}">Cadastrar</a></li>
               </ul>
             </li>
 

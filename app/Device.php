@@ -11,6 +11,9 @@ use Illuminate\Database\Eloquent\Model;
 class Device extends Model
 {
     protected $fillable = [
-
+    	'wing_id',
+    	'power',
+    	'hash'
     ];
+
 }

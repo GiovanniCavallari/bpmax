@@ -35,13 +35,13 @@
 					<div class="card-body">
 
 						@if(Request::is('*/editar'))
-							<form class="form-horizontal" action="{{ url('admin/clientes/'.$cliente->id.'/editar') }}" method="post">
+							<form class="form-horizontal" action="{{ url('admin/alas/'.$wing->id.'/update') }}" method="post">
 								@csrf
 
 								<div class="row">
 									<div class="form-group col-md-12">
 										<label for="nome" class="form-control-label">Nome</label>
-										<input id="nome" type="text" name="nome" class="form-control{{ $errors->has('nome') ? ' is-invalid' : '' }}" value="{{ old('nome') }}" autofocus>
+										<input id="nome" type="text" name="nome" class="form-control{{ $errors->has('nome') ? ' is-invalid' : '' }}" value="{{ $wing->nome }}">
 										@if ($errors->has('nome'))
 									       <small class="help-block-none helpform mt-1" style="color: red">
 												{{ $errors->first('nome') }}
@@ -53,7 +53,7 @@
 								<div class="row">
 									<div class="form-group col-md-12">
 										<label for="description" class="form-control-label">Descrição</label>
-										<input id="description" type="text" name="description" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" value="{{ old('description') }}">
+										<input id="description" type="text" name="description" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" value="{{ $wing->description }}">
 										@if ($errors->has('description'))
 									       <small class="help-block-none helpform mt-1" style="color: red">
 												{{ $errors->first('description') }}
@@ -105,7 +105,7 @@
 								<div class="form-group row col-md-12 text-center">
 									<div class="col-md-12">
 										<a href="{{ route('admin.alas.listar') }}" style="color: #fff" class="btn btn-secondary col-md-2">
-											Cancelar
+											Voltar
 										</a>
 										<button type="submit" class="btn btn-primary col-md-4">{{$button}}</button>
 									</div>
