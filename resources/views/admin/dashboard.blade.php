@@ -67,31 +67,18 @@
 <section class="charts no-padding-bottom">
 	<div class="container-fluid">
 		<div class="row">
-
-			<div class="col-lg-6">
+			<div class="col-lg-12">
 				<div class="line-chart-example card no-margin-bottom">
 					<div class="card-header d-flex align-items-center">
-						<h3 class="h4">Colaboradores mais silenciosos</h3>
+						<h3 class="h4">Pontuação dos colaboradores</h3>
 					</div>
 					<div class="card-body">
 						<canvas id="barChart1"></canvas>
 					</div>
 				</div>
 			</div>
-
-			<div class="col-lg-6">
-				<div class="line-chart-example card no-margin-bottom">
-					<div class="card-header d-flex align-items-center">
-						<h3 class="h4">Colaboradores mais barulhentos</h3>
-					</div>
-					<div class="card-body">
-						<canvas id="barChart2"></canvas>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
-
 </section>
 <!-- graficos ruídos -->
 
@@ -105,31 +92,12 @@
 						<h3 class="h4">Robôs cadastrados recentemente</h3>
 					</div>
 					<div class="card-body">
-						<div class="table-responsive table-hover">
-							<table class="table text-center">
-								<thead>
-									<tr>
-										<th>Código</th>
-										<th>Ala</th>
-										<th>Status</th>
-										<th>Data de cadastro</th>
-										<th>Ações</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="borderbottom">
-										<td class="linetable">#1</td>
-										<td class="linetable">Ala dos idosos</td>
-										<td class="linetable">Ligado</td>
-										<td class="linetable">13/04/2018 - 09:12</td>
-										<td>
-											<a href="" class="btn btn-sm btn-outline-primary">
-												Detalhes
-											</a>
-										</td>
-									</tr>                            
-								</tbody>
-							</table>
+						<div class="col-lg-6">
+							<div class="line-chart-example card no-margin-bottom">
+								<div class="card-body">
+									<canvas id="barChart2"></canvas>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

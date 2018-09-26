@@ -32,7 +32,7 @@ class ArduinoController extends Controller
 
     		$measure = Measure::create([
     			'decibels'  => $dados['db'],
-    			'points'    => 10,
+    			'points'    => $dados['db']/1000,
     			'device_id' => $deviceID[0]['id']
     		]);
 
