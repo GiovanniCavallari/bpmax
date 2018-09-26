@@ -108,11 +108,11 @@
                     </div>
                     <div class="col-lg-6">
                         <p class="mt-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sem felis, laoreet a tincidunt eget, placerat eget sapien. Etiam ut fringilla massa, vitae convallis augue. Ut ipsum ex, hendrerit in risus nec, molestie tempus purus. Vestibulum eget erat sit amet libero porta vestibulum.
+                            Para solucionar o problema apresentado pela BP, desenvolvemos o BPMax. &nbsp; O BPMax é um robô que fará a ronda nos leitos do hospital para detectar os altos niveis de ruído e identificar os causadores. Ele possui o formato de ambulância para ser visualmente mais amigável e compativel com o ambiente.
                         </p>
                         <br>
                         <p>
-                            Praesent nibh justo, faucibus malesuada urna id, viverra posuere magna. Praesent rutrum felis eu sollicitudin euismod. Fusce sed consectetur est. Ut et posuere risus. Nullam tortor risus, tempus sit amet nunc tincidunt, vehicula consequat ante. Cras sagittis accumsan varius. Praesent ac lorem nec erat gravida viverra eu ut odio. Sed facilisis vehicula libero. Morbi cursus sapien non neque volutpat, sed consequat tortor venenatis. Ut pellentesque ac justo in tincidunt. Nunc id lorem at est finibus suscipit nec a nunc. Duis lobortis sed quam in aliquet.
+                            Ao fazer a ronda, o BPMax vai captar os colaboradores que fazem os ruídos e enviar suas informações para um banco de dados. Com esse banco, tais dados podem ser organizados para consulta posteriormente, identificando quem faz mais e menos barulho. Dessa forma, é possivel agir mais precisamente para que o som ambiente fique dentro do limite.
                         </p>
                     </div>                                          
                 </div>
@@ -136,27 +136,18 @@
                         <div class="single-offer">
                             <i class="fas fa-microphone-alt icon-services"></i>
                             <h4>Medir quantidade de ruído</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
-                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="single-offer">
                             <i class="fas fa-lightbulb icon-services"></i>
                             <h4>Emissões de alerta</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
-                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="single-offer">
                             <i class="fas fa-user-edit icon-services"></i>
                             <h4>Dados dos colaboradores</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            </p>
                         </div>
                     </div>                                              
                 </div>
@@ -166,27 +157,18 @@
                         <div class="single-offer">
                             <i class="fas fa-tags icon-services"></i>
                             <h4>Tags RFID</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
-                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="single-offer">
                             <i class="fas fa-gamepad icon-services"></i>
                             <h4>Gamificação</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
-                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="single-offer">
                             <i class="fas fa-clock icon-services"></i>
                             <h4>Acesso em tempo real</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            </p>
                         </div>
                     </div>                                              
                 </div>
