@@ -103,7 +103,7 @@
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-6">
                         <div class="solution-frame">
-                            <img class="solution-image" src="https://static.vecteezy.com/system/resources/previews/000/108/504/non_2x/vector-ambulances.jpg" alt="">
+                            <img class="solution-image" src="img/robo.jpg" style="width: 470px" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6">
