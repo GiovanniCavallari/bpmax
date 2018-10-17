@@ -12,6 +12,7 @@ Timing timer;
 Timing decibel;
 
 int arduOut = 2; // realiza a comunicação entre os arduinos
+int arduIn  = 3; 
 
 //Calculo da média dos dbs no período da medição--------------------------------------------------------------
 double dbTot = 0;
@@ -34,9 +35,8 @@ int power = 1;
 //-----------------------------------------------------------
 
 //LEDS 
-int ledA = 5;
-int ledB = 6;
-int ledC = 9;
+int RED = 5;
+int GREEN = 6;
 
 void setup()   
 {  
@@ -47,12 +47,12 @@ void setup()
     mySerial.begin(38400);
     timer.begin(0);
 
-    pinMode(A0,      INPUT);//entrada para o sensor max4466 (microfone)
+    pinMode(19,      INPUT);//entrada para o sensor max4466 (microfone)
     pinMode(arduOut, OUTPUT);
+    pinMode(arduIn, INPUT);
 
-    pinMode(ledA, OUTPUT);
-    pinMode(ledB, OUTPUT);
-    pinMode(ledC, OUTPUT);
+    pinMode(GREEN, OUTPUT);
+    pinMode(RED, OUTPUT);
 
     //inicia o bluetooth e realiza a primeira procura
     mySerial.write("AT+INIT\r\n");
@@ -61,31 +61,29 @@ void setup()
     delay(10);
     
     Serial.println("BT INICIADO.");
-
-    analogWrite(ledA,255);
-    delay(1000);
-    analogWrite(ledA,0);
-    analogWrite(ledB,255);
-    delay(1000);
-    analogWrite(ledA,0);
-    analogWrite(ledC,255);
-    delay(1000);
-    analogWrite(ledC, 0);
 }  
 
 void loop()  
 {   
-    if(power == 1){
+    if(digitalRead(arduIn) == 1){
         // envia o JSON para o ESP8266 ---------------------------------------------------------------------------------------------------------------------
-        if(timer.onTimeout(5000)){
+        if(timer.onTimeout(500)){
             char jsonChar[5000];
-            root["db"] = dbTot / dbCont;
+            root["db"] = db = calculaDb();
             root["hash"] = "5620D192FC2830F6541910BB3E89B292"; 
             root.printTo((char*)jsonChar, root.measureLength() + 1);
             //->essa chave do json representa uma camada de segurança. 
             //Cada robo terá seu hash e só conseguirá acessar a api se o 
             //hash estiver cadastrado no banco de dados.
             Serial.write(jsonChar);
+
+            if (db < 55){
+              analogWrite(RED, 0);
+              analogWrite(GREEN, 255);
+            }else{
+              analogWrite(RED, 255);
+              analogWrite(GREEN, 0);
+            }
 
             //RESETA O BUFFER DO JSON
             jsonBuffer.clear();  
@@ -95,30 +93,8 @@ void loop()
             delay(10);
             mySerial.write("AT+INQ\r\n");
             delay(10);
-
-            dbTot = 0;
-            dbCont = 0;
         }
-        //-----------------------------------------------------------------------------------------------------------------------------------------------
-        //envia para o arduino 2 -----------------------------------------------------------------------------------------------------------------
-        if(decibel.onTimeout(500)){
-            db = calculaDb(); 
-            dbTot += db;
-            dbCont ++;
-            if(db >= 75){
-              digitalWrite(arduOut, LOW);
-              digitalWrite(ledA,HIGH);
-              digitalWrite(ledB,HIGH);
-              digitalWrite(ledC,HIGH);
-            }else{
-              digitalWrite(arduOut, HIGH);
-              digitalWrite(ledA,LOW);
-              digitalWrite(ledB,LOW);
-              digitalWrite(ledC,LOW);
-            }
-        }
-        //-----------------------------------------------------------------------------------------------------------------------------------------------
-        //Le os dados do HC-05 --------------------------------------------------------------------------------------------------------------------------
+        //Le os dados do /HC-05 --------------------------------------------------------------------------------------------------------------------------
         if (mySerial.available()) 
         {   
             while(mySerial.available()) 
@@ -127,24 +103,24 @@ void loop()
             }
 
             if(!command.indexOf("+INQ")){
+              if(sizeof(data) < 5){
                 data.add(command.substring(5,30));
+              }
             }
             delay(10);
             command = ""; // No repeats 
         }
         //-----------------------------------------------------------------------------------------------------------------------------------------------
     }else{
-        digitalWrite(arduOut, LOW);
-        digitalWrite(ledA,LOW);
-        digitalWrite(ledB,LOW);
-        digitalWrite(ledC,LOW);
+        digitalWrite(GREEN,LOW);
+        digitalWrite(RED,LOW);
     }
 
     // recebe do esp se está ligado ou não
-    if (Serial.available())
-    {
-        power = Serial.read() - 48;
-    }
+//    if (Serial.available())
+//    {
+//        power = Serial.read() - 48;
+//    }
 }
 
 double calculaDb(){
@@ -158,7 +134,7 @@ double calculaDb(){
     // collect data for 50 mS
     while (millis() - startMillis < sampleWindow)
     {
-        sample = analogRead(0);
+        sample = analogRead(19);
         if (sample < 1024)  // toss out spurious readings
         {
             if (sample > signalMax)
@@ -173,8 +149,6 @@ double calculaDb(){
     }
     peakToPeak = signalMax - signalMin;  // max - min = peak-peak amplitude
     double volts = (peakToPeak * 5.0) / 1024;  // convert to volts
-
-    double db = 13*log(volts/0.005012);
- 
+    double db = 20*log(volts/0.005012);
     return db;  
 }
